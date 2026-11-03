@@ -147,8 +147,8 @@ mutación que las pruebas fallan si se rompe cualquiera de esas garantías.
 
 | Antes | Ahora |
 |---|---|
-| LangChain | No se usa: BM25 propio y sin dependencias. |
-| LLaMA-3 / GPT-4 | No implementado. Hay una interfaz `Generator`; el generador con LLM es el de Anthropic (opcional) |
+| LangChain | BM25 propio y sin dependencias. |
+| LLaMA-3 / GPT-4 | Hay una interfaz `Generator`; el generador con LLM es el de Anthropic (opcional) |
 | Ragas / dataset de 50 preguntas | 36 preguntas sintéticas; compuerta determinista, sin Ragas |
 | Presidio | Reglas + padrón de personas (ver límites arriba) |
 | "System prompt obliga a citar la fuente" | Además, las citas se **verifican en código** |
