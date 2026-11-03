@@ -1,0 +1,3 @@
+# Opcional: embeddings semánticos (RETRIEVAL_BACKEND=chroma-minilm). Descarga PyTorch y el modelo.
+-r requirements-chroma.txt
+sentence-transformers>=2.6

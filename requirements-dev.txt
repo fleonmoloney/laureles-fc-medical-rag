@@ -1,0 +1,4 @@
+-r requirements.txt
+-r requirements-llm.txt
+-r requirements-chroma.txt
+pytest>=8

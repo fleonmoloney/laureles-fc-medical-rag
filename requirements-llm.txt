@@ -1,0 +1,2 @@
+# Opcional: redacción con LLM (LLM_MODEL + ANTHROPIC_API_KEY).
+anthropic>=0.50

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+.pytest_cache/
+# Datos reales: nunca al repositorio
+index/
+logs/
+data/roster.json
+data/private/

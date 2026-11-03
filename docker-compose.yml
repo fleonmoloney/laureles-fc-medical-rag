@@ -1,0 +1,23 @@
+# docker compose up --build   ->  http://localhost:8501
+# Por defecto usa el corpus y el padrón FICTICIOS de ejemplo. Para datos reales, cambiá los dos volúmenes
+# de solo lectura; el padrón real NO debe versionarse (ver .gitignore).
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DOCS_DIR: /data/docs
+      ROSTER_PATH: /data/roster.json
+      INDEX_PATH: /data/index/chunks.jsonl
+    volumes:
+      - ./data/synthetic:/data/docs:ro
+      - ./data/roster.example.json:/data/roster.json:ro
+      - index:/data/index
+    restart: unless-stopped
+
+volumes:
+  index:

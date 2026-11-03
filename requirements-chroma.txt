@@ -1,0 +1,3 @@
+# Opcional: recuperación densa sobre ChromaDB (RETRIEVAL_BACKEND=chroma).
+chromadb>=1.0
+scikit-learn>=1.4
