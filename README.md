@@ -144,16 +144,10 @@ mutación que las pruebas fallan si se rompe cualquiera de esas garantías.
   de spaCy en español) y no se probó una integración con él.
 - Rendimiento y comportamiento con documentos reales: el corpus tiene 7 documentos y 21 fragmentos.
 
-## Qué cambió respecto del piloto inicial
-
-El primer commit tenía un anonimizador que importaba Presidio sin configurarlo, un script de evaluación
-que dependía de un archivo de 2 preguntas (el README decía 50), un Dockerfile que apuntaba a `src/app.py`
-inexistente y no había ingesta, recuperación ni cadena RAG. Esta versión los implementa, y en el camino
-**se quitaron o cambiaron** cosas que el README original afirmaba:
 
 | Decía | Ahora |
 |---|---|
-| LangChain | No se usa: BM25 propio y sin dependencias. LangChain está cubierto en `centro-ia-rag-data-pipeline` |
+| LangChain | No se usa: BM25 propio y sin dependencias. |
 | LLaMA-3 / GPT-4 | No implementado. Hay una interfaz `Generator`; el generador con LLM es el de Anthropic (opcional) |
 | Ragas / dataset de 50 preguntas | 36 preguntas sintéticas; compuerta determinista, sin Ragas |
 | Presidio | Reglas + padrón de personas (ver límites arriba) |
