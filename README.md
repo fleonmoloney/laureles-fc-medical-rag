@@ -145,7 +145,7 @@ mutación que las pruebas fallan si se rompe cualquiera de esas garantías.
 - Rendimiento y comportamiento con documentos reales: el corpus tiene 7 documentos y 21 fragmentos.
 
 
-| Decía | Ahora |
+| Antes | Ahora |
 |---|---|
 | LangChain | No se usa: BM25 propio y sin dependencias. |
 | LLaMA-3 / GPT-4 | No implementado. Hay una interfaz `Generator`; el generador con LLM es el de Anthropic (opcional) |
